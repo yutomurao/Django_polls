@@ -24,9 +24,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^-ql&_qq!a74+uxwb4bu8yq7kfh@d&jq+9+upc_s6!j0csx$o1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["yutomurao.pythonanywhere.com"]
+ALLOWED_HOSTS = [
+    "yutomurao.pythonanywhere.com",
+    "127.0.0.1",
+    "localhost",
+    ]
 
 
 # Application definition
@@ -104,9 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
